@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/post_navigation"
+    app:startDestination="@id/show_post">
+
+    <fragment
+        android:id="@+id/show_post"
+        android:name="com.example.chaljabhai.show_post"
+        android:label="fragment_show_post"
+        tools:layout="@layout/fragment_show_post" >
+        <action
+            android:id="@+id/action_show_post_to_add_post"
+            app:destination="@id/add_post" />
+    </fragment>
+    <fragment
+        android:id="@+id/add_post"
+        android:name="com.example.chaljabhai.add_post"
+        android:label="fragment_add_post"
+        tools:layout="@layout/fragment_add_post" >
+        <action
+            android:id="@+id/action_add_post_to_show_post"
+            app:destination="@id/show_post" />
+    </fragment>
+</navigation>

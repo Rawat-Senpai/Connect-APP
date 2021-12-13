@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ADCCE6"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".add_post">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="10dp"
+        android:id="@+id/postholder"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="50dp"
+        android:background="#ADCCE6"
+        android:layout_height="280dp">
+
+        <EditText
+            android:id="@+id/post"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentTop="true"
+            android:layout_margin="20dp"
+            android:layout_marginTop="50dp"
+            android:background="#ADCCE6"
+            android:backgroundTint="@color/white"
+            android:gravity="top"
+            android:hint="Enter the text you want to enter "
+            android:textColor="#050000" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="358dp"
+
+
+        android:background="@color/black"
+        app:cardBackgroundColor="@color/appColor"
+        app:cardCornerRadius="20dp">
+
+        <Button
+            android:id="@+id/send_post"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/post"
+            android:layout_margin="3dp"
+            android:text="send_post"
+            app:backgroundTint="@color/appColor" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
